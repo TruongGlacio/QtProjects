@@ -1,0 +1,36 @@
+
+QAudioPlayer 0.3
+============ ===
+
+This is a replacement for the Tcl/Tk-based audio_player script included in the
+Q-Audio distribution. It provides about the same functionality, but with some
+extensions (FFT display, playback volume and speed control), bug fixes (this
+version of the audio player correctly plays a file even if the file and output
+device samplerates differ) and, last but not least, a much nicer, KDE/Qt-based
+user interface.
+
+You'll need KDE (probably a fairly recent version, 3.2 has been tested) for
+running this program. To install, do the usual './configure && make && make
+install'.
+
+Usage should be fairly straightforward. Drag an audio file to the desktop icon
+or invoke the qaudioplayer program with the filename as parameter to play the
+file. (Note that only the file types recognized by libsndfile can be loaded.) 
+You can also load a file in QAudioPlayer with the Open button. Use the Play
+and Stop buttons to start and stop playback. Drag the big slider below the
+wave display to move around in the file, or the little slider to the right of
+the Stop button to change the playback volume. Switch between waveform and FFT
+display and configure the FFT display using the controls at the top of the
+window. With the Speed control you can adjust the playback speed, that's
+probably the most important feature. ;-)
+
+Requires Q 7.1/Q-Audio 2.4 or later.
+
+
+Enjoy! :)
+
+June 2006
+Albert Graef
+ag@muwiinfa.geschichte.uni-mainz.de, Dr.Graef@t-online.de
+http://www.musikwissenschaft.uni-mainz.de/~ag
+

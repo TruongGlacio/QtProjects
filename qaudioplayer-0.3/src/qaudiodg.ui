@@ -1,0 +1,438 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>QAudioDg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>QAudioDg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>586</width>
+            <height>365</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>QAudioPlayer</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>fft</cstring>
+                    </property>
+                    <property name="text">
+                        <string>FFT</string>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>fmin</cstring>
+                    </property>
+                    <property name="suffix">
+                        <string>Hz</string>
+                    </property>
+                    <property name="maxValue">
+                        <number>99999</number>
+                    </property>
+                    <property name="lineStep">
+                        <number>100</number>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>fmax</cstring>
+                    </property>
+                    <property name="suffix">
+                        <string>Hz</string>
+                    </property>
+                    <property name="maxValue">
+                        <number>99999</number>
+                    </property>
+                    <property name="lineStep">
+                        <number>100</number>
+                    </property>
+                    <property name="value">
+                        <number>2500</number>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Mag:</string>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>scale</cstring>
+                    </property>
+                    <property name="prefix">
+                        <string>x</string>
+                    </property>
+                    <property name="value">
+                        <number>5</number>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Speed:</string>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>speed</cstring>
+                    </property>
+                    <property name="suffix">
+                        <string>%</string>
+                    </property>
+                    <property name="maxValue">
+                        <number>1000</number>
+                    </property>
+                    <property name="minValue">
+                        <number>10</number>
+                    </property>
+                    <property name="value">
+                        <number>100</number>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>frame2</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>1</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>102</red>
+                    <green>104</green>
+                    <blue>195</blue>
+                </color>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>2</number>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>frame</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QSlider">
+            <property name="name">
+                <cstring>slider</cstring>
+            </property>
+            <property name="maxValue">
+                <number>100000</number>
+            </property>
+            <property name="lineStep">
+                <number>1000</number>
+            </property>
+            <property name="pageStep">
+                <number>10000</number>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Open</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+O</string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image0</iconset>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Play</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+P</string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image1</iconset>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton3</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Stop</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+S</string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image2</iconset>
+                    </property>
+                </widget>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>volume</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>100</number>
+                    </property>
+                    <property name="value">
+                        <number>100</number>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton4</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Quit</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+Q</string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image3</iconset>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>status</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>1</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Ready</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>time</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>60</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>  0:00</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="338">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000011949444154789c9d934d6ec23010853f232ed15dc231d8d5d7e855289265baea212a54d163b852a4c98e1e218eb8c8eb2210124a4be86c3e8d6ccdcff3333a085542076195716f3eafdb9a65b1e4c4cddb461e4f2201c0236e787ec951e518a246d148b635fd35c97cd879b55e9173a62c17e4dc50960b1e68d8bdef94485c9bacaf645b3bb6456a2e7825005965cceab6860252db55ceb981d28d8923e73c2240fa4c72b635a536e10bcf14aed6cf90855b386288fc14ee4674f7e95608a6992f3ce0f8fa7093e80b0f59dd0a24b0cab06092d0eb0b92d0fec8df720b26403144f5efbfdf1d2f4f600cf15c6068a25b9d87f949830b1f4c9be024620c51bd1301e71c9d3a4f9dd96e12703ae8fc315aa8737d972f7a0dfecb6f1d4c1b87f60576270000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="221">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000000a449444154789cadd0c109c2401484e12f620162051e4c03e9c55a2c45c4023ca4045b10f1eec50a420a10e2c1059365499690b90c3c76defcfb5844673c7473a20521dc62831db6619ebda0d1a97bd303dea8a617ad088fcb302951a30d64cdf8d7d204b14688d204b18f10e511a4890a552e41ec47dce6103cf1c1e57f8b3c82bbdf0d4e8a7e789a20d1186b3d207805bf621f1a273424c8684c13d40aad2ea771717d01fe473bb53dc9d5300000000049454e44ae426082</data>
+    </image>
+    <image name="image2">
+        <data format="PNG" length="171">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000007249444154789cd593610a80200c461fdda01b745d8f1074a579048fd015d60f05432d8d46d0403ea67edb632898c40af837053c28a0a0234b4ed6098005a23f83dce99cee96042a75a766be5505f68c2f031aae087a9dd594c037081ecdc0fd7f06e6ef4080900e7b5ab8899fc955bbdfc401f2180ac0131688200000000049454e44ae426082</data>
+    </image>
+    <image name="image3">
+        <data format="PNG" length="228">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000000ab49444154789cad92d10dc3200c449fba4137e8ba1d21122bc10819212b5c3f0284601b556a2d2122e08ee723f097da80f2ddd1ecae161020501d0443028d260f005e50cf341035a001acef3febf78d603f9d355028db9b25503206c7b9329a38665dbc2f328848ba58403206c76590039226aefbd3ab954becf53c679200de01c12c7666561978811992288355cf86c42370c5deebb8ff41bba9bd73aabd4e7337bfd736a71a9715ff581ff809dfbb879672820000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>pushButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>opencb()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton2</sender>
+        <signal>clicked()</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>playcb()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton3</sender>
+        <signal>clicked()</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>stopcb()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton4</sender>
+        <signal>clicked()</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>quitcb()</slot>
+    </connection>
+    <connection>
+        <sender>slider</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>slidercb(int)</slot>
+    </connection>
+    <connection>
+        <sender>fft</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>fftcb(bool)</slot>
+    </connection>
+    <connection>
+        <sender>fmin</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>fmincb(int)</slot>
+    </connection>
+    <connection>
+        <sender>fmax</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>fmaxcb(int)</slot>
+    </connection>
+    <connection>
+        <sender>scale</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>scalecb(int)</slot>
+    </connection>
+    <connection>
+        <sender>volume</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>volumecb(int)</slot>
+    </connection>
+    <connection>
+        <sender>speed</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>QAudioDg</receiver>
+        <slot>speedcb(int)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">qaudiodg.ui.h</include>
+</includes>
+<slots>
+    <slot>opencb()</slot>
+    <slot>playcb()</slot>
+    <slot>stopcb()</slot>
+    <slot>quitcb()</slot>
+    <slot>slidercb( int )</slot>
+    <slot>fftcb( bool )</slot>
+    <slot>fmincb( int )</slot>
+    <slot>fmaxcb( int )</slot>
+    <slot>scalecb( int )</slot>
+    <slot>volumecb( int )</slot>
+    <slot>speedcb( int )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=QAudioPlayer
+Name[xx]=xxQAudioPlayerxx
+Exec=qaudioplayer
+Icon=qaudioplayer
+Type=Application
+Comment=Q Audio Player
+Comment[de]=Q Audio-Spieler
+Comment[xx]=xxQ Audio Playerxx

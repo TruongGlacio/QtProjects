@@ -1,0 +1,22 @@
+2006-06-03  Albert Graef  <Dr.Graef@t-online.de>
+	Release 0.3
+
+	Update for Q 7.1
+
+2005-06-25  <>
+	Release 0.2
+
+	prefer Jack if it is available 
+
+	updates for q-audio 2.3 
+
+2004-09-25  <>
+	Do sample rate conversion, speed control, check file format 
+
+2004-09-22  <>
+	Added FFT display and volume control 
+
+2004-08-19  <Dr.Graef@t-online.de>
+	Release 0.1 
+
+ 

@@ -1,0 +1,87 @@
+# translation of de.po to 
+# Albert Graef <Dr.Graef@t-online.de>, 2004.
+
+#: main.cpp:28
+msgid "Q Audio Player"
+msgstr "Q Audio-Spieler"
+
+#: main.cpp:35
+msgid "Audio file to play."
+msgstr "Abszuspielende Audio-Datei."
+
+#: main.cpp:41 rc.cpp:1
+msgid "QAudioPlayer"
+msgstr "QAudioPlayer"
+
+#: qaudiodg2.cpp:50
+msgid "Error loading the qaudioplayer.q script, please check installation (exiting)."
+msgstr "Fehler beim Laden des qaudioplayer.q-Skripts, bitte überprüfen Sie die Installation (Ende)."
+
+msgid "Could not open audio device, please check your audio setup (exiting)."
+msgstr "Konnte das Audio-Gerät nicht öffnen, bitte überprüfen Sie Ihre Audio-Einstellungen (Ende)."
+
+#: qaudiodg2.cpp:106
+msgid ""
+"*.aiff *.au *.snd *.wav|Audio Files (*.aiff, *.au, *.snd, *.wav)\n"
+"*|All files"
+msgstr ""
+"*.aiff *.au *.snd *.wav|Audio-Dateien (*.aiff, *.au, *.snd, *.wav)\n"
+"*|Alle Dateien"
+
+#: qaudiodg2.cpp:106
+msgid "Open audio file"
+msgstr "Audio-Datei öffnen"
+
+#: rc.cpp:3
+msgid "0:00"
+msgstr "0:00"
+
+#: rc.cpp:5
+msgid "&Open"
+msgstr "&Öffnen"
+
+#: rc.cpp:6
+msgid "Alt+O"
+msgstr "Alt+ö"
+
+#: rc.cpp:7
+msgid "&Play"
+msgstr "S&pielen"
+
+#: rc.cpp:8
+msgid "Alt+P"
+msgstr "Alt+P"
+
+#: rc.cpp:9
+msgid "&Stop"
+msgstr "&Stopp"
+
+#: rc.cpp:10
+msgid "Alt+S"
+msgstr "Alt+S"
+
+#: rc.cpp:12
+msgid "Alt+Q"
+msgstr "Alt+E"
+
+msgid "Ready"
+msgstr "Bereit"
+
+msgid "Speed:"
+msgstr "Geschw.:"
+
+msgid "Error opening audio file."
+msgstr "Fehler beim Öffnen der Audio-Datei."
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
