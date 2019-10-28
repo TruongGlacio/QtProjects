@@ -55,7 +55,7 @@ MainWindow::MainWindow(QWidget *parent) :
   setGeometry(800, 500, 1000, 780);
   
   setupDemo(10);
-  //setupPlayground(ui->customPlot);
+ // setupPlayground(ui->customPlot);
   // 0:  setupQuadraticDemo(ui->customPlot);
   // 1:  setupSimpleDemo(ui->customPlot);
   // 2:  setupSincScatterDemo(ui->customPlot);
